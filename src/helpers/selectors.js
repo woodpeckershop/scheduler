@@ -12,12 +12,21 @@ export function getAppointmentsForDay(state, day) {
 }
 
 export function getInterview(state, interview) {
-  if (interview !== null) {
-    return {
-      student: interview.student,
-      interviewer: state.interviewers[interview.interviewer],
+  if (interview) {
+    return { ...interview, interviewer: state.interviewers[interview.interviewer],
     };
   } else {
     return null
   }
+}
+
+export function getInterviewersForDay(state, day) {
+  const IntArray = [];
+  for (const Day of state.days) {
+    if (Day.name === day) {
+      Day.interviewers.forEach(number => IntArray.push(state.interviewers[number]))
+    }
+  }
+  //... returns an array of appointments for that day
+  return IntArray;
 }

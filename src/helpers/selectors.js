@@ -27,6 +27,6 @@ export function getInterviewersForDay(state, day) {
       Day.interviewers.forEach(number => IntArray.push(state.interviewers[number]))
     }
   }
-  //... returns an array of appointments for that day
+  //returns an array of appointments for that day
   return IntArray;
 }

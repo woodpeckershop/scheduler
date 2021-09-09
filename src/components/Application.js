@@ -30,8 +30,6 @@ export default function Application(props) {
     }
   );
 
-  // const setDays = (days) => setState(prev => ({ ...prev, days }));
-
   return (
     <main className="layout">
       <section className="sidebar">

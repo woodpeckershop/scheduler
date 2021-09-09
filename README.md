@@ -4,7 +4,7 @@ Using the latest tools and techniques, Interview Scheduler is a React applicatio
 
 ## Final Product
 
-!["screen recording"] (https://github.com/woodpeckershop/scheduler/blob/master/doc/Scheduler.gif?raw=true)
+!["screen recording"](https://github.com/woodpeckershop/scheduler/blob/master/doc/Scheduler.gif?raw=true)
 
 ## Setup
 
